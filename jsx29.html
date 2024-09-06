@@ -1,0 +1,68 @@
+           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="d1"></div>
+   <script type="text/babel">
+    function abc(a){
+        alert(a)
+    }
+    var ar = [
+    {
+    "firstname": "praveen",
+    "lastname": "gubbala",
+    "age": 36,
+    "gender": "male",
+   
+    },
+    {
+    "firstname": "srikanth",
+    "lastname": "gubbala",
+    "age": 32,
+    "gender": "male",
+   
+    },
+    {
+    "firstname": "Laxmi",
+    "lastname": "reddy",
+    "age": 21,
+    "gender": "female",
+   
+    },
+    {
+    "firstname": "mounika",
+    "lastname": "mudiraj",
+    "age": 20,
+    "gender": "female",
+   
+    },
+    {
+    "firstname": "nikhil",
+    "lastname": "m",
+    "age": 22,
+    "gender": "male",
+   
+    },
+    {
+    "firstname": "riya",
+    "lastname": "bhadouria",
+    "age": 14,
+    "gender": "female",
+   
+    }
+    ];
+     var x=<div>{ar.map((a,i)=>{return <li onClick={()=>{abc(a.firstname)}}>{a.firstname}</li>})}</div>
+     ReactDOM.render(x,document.getElementById("d1"))
+   </script> 
+</body>
+</html>
